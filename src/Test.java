@@ -7,7 +7,7 @@ public class Test {
     static int num2 = 10;//32 bit
     static int num3 = 10;//32 bit
 
-    Integer num2 = 10;
+//    Integer num2 = 10;
     long numLong = 1000012312123112312L;// 64 bit
     byte numByte = 127;// 8 bit
     short numShort = 32767; //16 bit
@@ -73,6 +73,24 @@ public class Test {
 
         System.out.println(eqTwoVariables(num, num1));
 
+
+        calc.somethingMethod();
+
+        calc.somethingMethod1(); // тут он оставил после себя значение int 0, но мы его никуда не сохранили
+
+
+        int resultOfReturn = calc.somethingMethod1();
+
+        calc.compareToVersion1();
+        calc.compareToVersion2();
+
+        int a = 2;
+        int b = 2;
+
+        boolean res = calc.compareToVersion3(a, b);
+
+        System.out.println(res);
+        System.out.println(calc.compareToVersion3(3, 5));
     }
 
 
