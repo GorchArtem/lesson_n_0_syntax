@@ -16,7 +16,6 @@ public class MathCalc {
 
     // оператор ИЛИ   ||
 
-    int sum = 2 + 2 + 2 + 2;
 
     int defaultZero = 0;
 
@@ -32,9 +31,13 @@ public class MathCalc {
 //        // return MainPage.refresh();
 //    }
 
-    int somethingMethod1() {
-        System.out.println(sum);
+    public int sumTwoNumbers(int a, int b) {
+       return a + b;
+    }
 
+
+
+    int somethingMethod1() {
         return defaultZero;
     }
 

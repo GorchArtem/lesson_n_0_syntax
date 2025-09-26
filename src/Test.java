@@ -45,52 +45,65 @@ public class Test {
 
 
     public static void main(String[] args) {
-
-        MathCalc calc = new MathCalc();
-
-        Human player1 = new Human(); // cоздание экземпляра класса ИЛИ создание объекта
-        Human player2 = new Human(); // 4 экземпляра класса Human , либо 4 объекта типа Human
-        Human player3 = new Human();
-        Human player4 = new Human();
-
-        player1.age = 20;
-        player1.gender = "male";
-        player1.name = "Vasiliy";
-
-        System.out.println(player1.age);
-        System.out.println(player1.gender);
-        System.out.println(player2.age);
+        Employee e = new Employee();
 
 
-        eqTwoVariables(num2, num);
 
 
-        IntProxy intProxy = new IntProxy();
-        intProxy.num = 10;
-
-        System.out.println(intProxy.equalsNumToNum(20));
-
-
-        System.out.println(eqTwoVariables(num, num1));
-
-
-        calc.somethingMethod();
-
-        calc.somethingMethod1(); // тут он оставил после себя значение int 0, но мы его никуда не сохранили
+//        int code = Response.getStatus();
+//
+//
+//        if (code == 200) {
+//            System.out.println("Status code is 200");
+//        } if (code == 300) {
+//            System.out.println("Status code is 300");
+//        }
 
 
-        int resultOfReturn = calc.somethingMethod1();
 
-        calc.compareToVersion1();
-        calc.compareToVersion2();
+//
+//        switch (code) {
+//            case 100:
+//                System.out.println(num1);
+//                break;
+//                case 200:
+//                    System.out.println(num2);
+//                    case 300:
+//                        System.out.println(num3);
+//                        break;
+//        }
 
-        int a = 2;
-        int b = 2;
+//
+//
+//
+//
+//
 
-        boolean res = calc.compareToVersion3(a, b);
+        String str1 = "Hello World!";
 
-        System.out.println(res);
-        System.out.println(calc.compareToVersion3(3, 5));
+        int[] num1 = {1,23423,3,4,34234,6,7,8};
+
+        Employee[] employees = new Employee[20];
+
+        e.historyTransactionsIDs = new int[10];
+
+
+        e.historyTransactionsIDs[0] = 234;
+        e.historyTransactionsIDs[1] = 232;
+        e.historyTransactionsIDs[2] = 34656;
+        e.historyTransactionsIDs[6] = 37;
+
+
+        System.out.println(e.historyTransactionsIDs[0]);
+        System.out.println(e.historyTransactionsIDs[4]);
+
+        employees[0] = new Employee();
+        System.out.println(employees[0]);
+        System.out.println(employees[10]);
+
+
+
+
     }
 
 
