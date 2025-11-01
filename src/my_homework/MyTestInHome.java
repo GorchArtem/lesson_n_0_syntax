@@ -3,6 +3,7 @@ package my_homework;
 import java.util.Scanner;
 
 public class MyTestInHome {
+
     public static void main (String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -17,6 +18,20 @@ public class MyTestInHome {
 
         System.out.println("Your age is " + age);
 
+
+        CoffeeMachine coffeeMachine1 = new CoffeeMachine(120, 123);
+
+        coffeeMachine1.testTest();
+
+
+
+
+
+        CoffeeMachine coffeeMachine2 = new CoffeeMachine();
+
+        System.out.println(coffeeMachine1.coffeeAmount);
+
+        System.out.println(coffeeMachine2.coffeeAmount);
 
     }
 

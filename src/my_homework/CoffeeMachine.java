@@ -2,12 +2,30 @@ package my_homework;
 
 public class CoffeeMachine {
 
-    int waterAmount = 150;
-    int coffeeAmount = 10;
+    int waterAmount;
+    int coffeeAmount;
+
+    public CoffeeMachine() {
+    }
+
+    public CoffeeMachine(int waterAmount, int coffeeAmount) {
+        this.waterAmount = waterAmount; // this == coffeeMachine1
+        this.coffeeAmount = coffeeAmount; // this == coffeeMachine1
+    }
+
+    public CoffeeMachine(int waterAmount, int coffeeAmount, String coffeeName) {
+
+    }
 
     public static void main (String[] args) {
 
     }
+
+    public CoffeeMachine testTest() {
+        return this;
+    }
+
+
 }
 
 //Создать класс CoffeeMachine
