@@ -5,19 +5,26 @@ public class CoffeeMachine {
     int waterAmount;
     int coffeeAmount;
 
-    public CoffeeMachine() {
-    }
+//    public CoffeeMachine() {
+//    }
 
     public CoffeeMachine(int waterAmount, int coffeeAmount) {
         this.waterAmount = waterAmount; // this == coffeeMachine1
         this.coffeeAmount = coffeeAmount; // this == coffeeMachine1
     }
 
-    public CoffeeMachine(int waterAmount, int coffeeAmount, String coffeeName) {
+//    public void setValueWaterAndCoffeeAmount(int waterAmount, int coffeeAmount) {
+//        this.waterAmount = waterAmount;
+//        this.coffeeAmount = coffeeAmount;
+//    }
 
+    public void getValueOfCoffeeAndWater() {
+        System.out.println("количество воды = " + waterAmount + ", количество кофе = " +  coffeeAmount);
+        System.out.printf("количество воды = %d, количество кофе = %d",  waterAmount, coffeeAmount);
     }
 
-    public static void main (String[] args) {
+
+    public CoffeeMachine(int waterAmount, int coffeeAmount, String coffeeName) {
 
     }
 

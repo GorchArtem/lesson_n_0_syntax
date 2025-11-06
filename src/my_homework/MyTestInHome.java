@@ -27,11 +27,14 @@ public class MyTestInHome {
 
 
 
-        CoffeeMachine coffeeMachine2 = new CoffeeMachine();
+        CoffeeMachine coffeeMachine2 = new CoffeeMachine(122, 133);
+        coffeeMachine2.getValueOfCoffeeAndWater();
 
-        System.out.println(coffeeMachine1.coffeeAmount);
 
-        System.out.println(coffeeMachine2.coffeeAmount);
+//
+//        System.out.print(coffeeMachine1.coffeeAmount);
+//
+//        System.out.println(coffeeMachine2.coffeeAmount);
 
     }
 

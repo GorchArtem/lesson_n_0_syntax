@@ -37,6 +37,19 @@ public class TestMethodsExamples {
         cat.run();
 
 
+
+// ------------- ------------- ------------- -------------
+
+        Car car = new Car();
+        Engine engine = new Engine();
+
+        engine.model =  "123qwe";
+        car.engine = engine;
+
+
+        Car car2 =  new Car("Mersedez", new Engine());
+        System.out.println(car2.engine);
+
     }
 
     // x + 10 = 15;
