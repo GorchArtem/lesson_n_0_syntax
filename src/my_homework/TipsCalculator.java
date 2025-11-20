@@ -25,35 +25,24 @@ public class TipsCalculator {
         tipsAmount3 = costOfOrder * 0.05;
 
 
-
-        if (service > 10) {
+        // && - логическое И
+        // || - логическое ИЛИ
+        if (service > 10 || service < 1) {
             System.out.println("Некорректное значение оценки");
+        } else if (service == 10) {
+            System.out.println("Отличное обслуживание. Сумма чаевых " + (int) tipsAmount1 + " руб. или 20% от суммы заказа");
+        } else if (service >= 7) {
+            System.out.println("Хорошее обслуживание. Сумма чаевых " + (int) tipsAmount2 + " руб. или 15% от суммы заказа");
+        } else if (service >= 1) {
+            System.out.println("Плохое обслуживание. Сумма чаевых " + (int) tipsAmount3 + " руб. или 5% от суммы заказа");
         }
-           else
-               if (service == 10) {
-                   System.out.println("Отличное обслуживание. Сумма чаевых " + (int) tipsAmount1 + " руб. или 20% от суммы заказа");
-        }      else
-                   if (service >= 7 ) {
-                       System.out.println("Хорошее обслуживание. Сумма чаевых " + (int) tipsAmount2 + " руб. или 15% от суммы заказа");
-        }          else
-                       if (service >= 1) {
-                           System.out.println("Плохое обслуживание. Сумма чаевых " + (int) tipsAmount3 + " руб. или 5% от суммы заказа");
-        }
-
-                       else
-                           if(service < 1 ){
-                              System.out.println("Некорректное значение оценки");
-                       }
-
-        }
+//        else if (service < 1) {
+//            System.out.println("Некорректное значение оценки");
+//        }
 
     }
 
-
-
-
-
-
+}
 
 
 
