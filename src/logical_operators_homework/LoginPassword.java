@@ -1,4 +1,4 @@
-/* package logical_operators_homework;
+package logical_operators_homework;
 
 import java.util.Scanner;
 
@@ -15,9 +15,13 @@ public class LoginPassword {
         System.out.println("Ввдедите пароль: ");
         password= input.nextLine();
 
-        if (login = "admin" && password = "qwerty")
 
+        System.out.println(checkLoginAndPass(login,password));
 
+    }
+
+    static boolean checkLoginAndPass(String login, String password) {
+        return login.equals("admin") && password.equals("qwerty");
     }
 }
 

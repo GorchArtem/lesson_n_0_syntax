@@ -16,17 +16,31 @@ public class IceCreamStore  {
 
 
         if (typeOfIceCream == 1) {
-            System.out.print("Ваниль → 150 руб, Классическое ванильное мороженое");
+            System.out.println("Ваниль → 150 руб, Классическое ванильное мороженое");
         } else if (typeOfIceCream == 2) {
-            System.out.print("Шоколад → 170 руб, Шоколадное мороженое с какао");
+            System.out.println("Шоколад → 170 руб, Шоколадное мороженое с какао");
         } else if (typeOfIceCream == 3) {
-            System.out.print("Клубника → 160 руб, Клубничное мороженое с кусочками ягод");
+            System.out.println("Клубника → 160 руб, Клубничное мороженое с кусочками ягод");
         } else if (typeOfIceCream == 4) {
-            System.out.print("Фисташка → 190 руб, Фисташковое мороженое с орехами");
-        } else if (typeOfIceCream > 4 || typeOfIceCream < 1) {
-            System.out.print("Такого вкуса нет в меню");
+            System.out.println("Фисташка → 190 руб, Фисташковое мороженое с орехами");
+        } else {
+            System.out.println("Такого вкуса нет в меню");
         }
 
+
+        System.out.println("Введите вкус: ");
+        Scanner input2 = new Scanner(System.in);
+        String stringType = input2.nextLine().toLowerCase();
+        switch (stringType) {
+            case "ваниль":
+                System.out.println("Ваниль → 150 руб, Классическое ванильное мороженое");
+                break;
+            case "шоколад":
+                System.out.print("Шоколад → 170 руб, Шоколадное мороженое с какао");
+                break;
+                default:
+                    System.out.println("Такого вкуса нет в наличии");
+        }
     }
 }
 

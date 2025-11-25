@@ -12,13 +12,23 @@ public class CheckingForAnInteger {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите любое целое число: ");
         num = input.nextInt();
+//
+//        if (num >= 5 && num <= 15) {
+//            System.out.println(numTrueCheck);
+//        } else System.out.println(numFalseCheck);
 
-        if (num >= 5 && num <= 15) {
-            System.out.println(numTrueCheck);
-        } else System.out.println(numFalseCheck);
-
+        System.out.println(checkNumber(num));
 
     }
+
+    static boolean checkNumber(int num) {
+        return num >= 5 && num <= 15;
+
+//        if(num >= 5 && num <= 15) {
+//            return true;
+//        } else return false;
+    }
+
 }
 
 

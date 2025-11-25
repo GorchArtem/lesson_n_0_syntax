@@ -17,7 +17,7 @@ public class TimeOfDay {
             System.out.println("Добрый день!");
         } else if (currentTime >= 17 && currentTime < 23) {
             System.out.println("Добрый вечер!");
-        } else if (currentTime >= 0 || currentTime == 23) {
+        } else if (currentTime <= 4 || currentTime == 23 || currentTime == 24 ) { // 23 24 0 4
             System.out.println("Доброй ночи!");
         }
 
