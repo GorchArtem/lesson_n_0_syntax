@@ -4,15 +4,15 @@ public class YearCheckTest {
     public static void main(String[] args) {
 
 
-        System.out.println(checkIfYear(2000));
+//        System.out.println(checkIfYear(2000));
 
     }
 
-    static boolean checkIfYear(int year){
+//    static boolean checkIfYear(int year){
         //проверить что год делится на 4 -> скорее всего високосный
         // но если делится на 100 -> не високосный
         // если делится на 400 ->  то високосный
-    }
+//    }
 }
 
 

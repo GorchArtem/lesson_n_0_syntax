@@ -14,13 +14,6 @@ public class ArraysMain {
 
 
 
-
-
-
-
-
-
-
         for (int i = intNumbers.length - 1; i >=0; i--) {
             System.out.println(i);// i < intNumbers.length то же самое что и < 20 (int[] intNumbers = new int[20];)
             if(intNumbers[i] == 12312) {
