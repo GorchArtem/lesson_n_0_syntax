@@ -9,7 +9,7 @@ public class FootballController {
         System.out.println("Введите название и город клуба: ");
         String clubName = input.nextLine();
         String clubCity = input.nextLine();
-//
+
         FootballClub footballClub = new FootballClub(clubName, clubCity);
 //
 //        System.out.println("Введите имя, возраст и рейтинг игрока: ");
@@ -22,7 +22,7 @@ public class FootballController {
 //        Footballer footballer = new Footballer(nameFootballer, footballerAge, rateFootballer);
 
         System.out.println("Введите клоичество игроков: ");
-        int countOfPlayers = input.nextInt();
-        footballClub.addFootballers(countOfPlayers);
+        int countOfPlayers = Integer.parseInt(input.nextLine());
+        footballClub.addFootballers(countOfPlayers,  input);
     }
 }
