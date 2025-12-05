@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class FootballClub {
-    String name;
-    String city;
-    Footballer[] footballers;
+    String name; // Переменная название клуба
+    String city; // Переменная город
+    Footballer[] footballers; // Массив Footballer[] необходим для добавление футболистов массивом
 
-    public FootballClub(String name, String city) {
+    public FootballClub(String name, String city) { // Конструктор FootballClub необходим для добавление команд в наш код
         this.name = name;
         this.city = city;
     }
@@ -35,3 +35,11 @@ public class FootballClub {
     }
 
 }
+
+/**
+ * 1. Для чего нужен метод addFootballers?
+ * 2. Почему Scanner как аргумент внутри метода и почему он не расписан полностью?
+ * 3. Что означает new Footballer[countPlayers] в объекте и для чего нужен данный объект?
+ * 4. Неаонятно как работает цикл
+ * 5. Зачем мы создавали конструкторы если в конечном итоге мы их не используем?
+ */
