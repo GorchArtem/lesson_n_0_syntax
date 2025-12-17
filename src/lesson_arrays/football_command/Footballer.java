@@ -5,10 +5,12 @@ public class Footballer {
     int age; // Переменная возраст футболитса
     double rate; // Переменная рейтинг футболиста
 
-    public Footballer(String name, int age, double rate) {  // Конструктор Footballer неоюходим для того, чтобы мы могли добавлять разных футболистов в наш код
+    // Конструктор Footballer неоюходим для того, чтобы мы могли добавлять разных футболистов в наш код
+    public Footballer(String name, int age, double rate) {
         this.name = name;
         this.age = age;
         this.rate = rate;
+        System.out.println("Тут выполняется создание нового объекта класса Footballer = " +  name + " " + age +  " " + rate);
     }
 }
 

@@ -1,6 +1,7 @@
 package lesson_arrays.football_command;
 
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class FootballClub {
@@ -8,9 +9,11 @@ public class FootballClub {
     String city; // Переменная город
     Footballer[] footballers; // Массив Footballer[] необходим для добавление футболистов массивом
 
-    public FootballClub(String name, String city) { // Конструктор FootballClub необходим для добавление команд в наш код
+    // Конструктор FootballClub необходим для добавление команд в наш код
+    public FootballClub(String name, String city) {
         this.name = name;
         this.city = city;
+        System.out.println("Тут выполняется создание нового объекта класса FootballClub = " +  name + " " + city);
     }
 
     public void addFootballers(int countPlayers, Scanner input) {
