@@ -5,6 +5,9 @@ public class HumanAndAddressMain {
     public static void main (String[] args){
 
         Human human = new Human("Novruz", "Moscow", "Tverskaya");
+
+        Address address = new Address("Moscow", "Tverskaya");
+        Human human1 = new Human(address);
     }
 }
 

@@ -17,14 +17,18 @@ public class BankAccount {
     public static void main (String[] args){
         BankAccount bankAccount = new BankAccount("5495HRX693SR");
         BankAccount bankAccount1 = new BankAccount("1235AF777NV", 150345.99);
-        BankAccountDeposit bankAccountDeposit = new BankAccountDeposit();
-        double balanceDeposit = bankAccount1.balance + bankAccountDeposit.amount;
+        bankAccount1.deposit(1231.12);
+        System.out.println(bankAccount1.balance);
 
 
 
         System.out.println("Вывести номер счета клиента: " + bankAccount.accountNumber + " и его баланс: " + bankAccount.balance);
         System.out.println("Вывести номер счета клиента: " + bankAccount1.accountNumber + " и его баланс: " + bankAccount1.balance);
-        System.out.println(balanceDeposit);
+    }
+
+
+    public void deposit(double amount){
+        balance += amount;
     }
 
 }

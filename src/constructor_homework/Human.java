@@ -3,11 +3,14 @@ package constructor_homework;
 public class Human {
 
     String name;
-    Address homeAddress = new Address("Moscow", "Tverskaya");
+    Address homeAddress;
 
-    public Human (String name, String city, String street){
+    public Human (String name, String city, String street) {
+        this.homeAddress = new Address(city, street);
+    }
 
-        Address address = new Address(homeAddress.city, homeAddress.street);
+    public Human(Address address) {
+        this.homeAddress = address;
     }
 
 
