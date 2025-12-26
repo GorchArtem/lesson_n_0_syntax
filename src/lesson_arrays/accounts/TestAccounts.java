@@ -1,4 +1,4 @@
-package lesson_arrays;
+package lesson_arrays.accounts;
 
 
 /*
