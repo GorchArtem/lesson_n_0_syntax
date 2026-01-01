@@ -16,9 +16,20 @@ public class BankAccount {
 
     public static void main (String[] args){
         BankAccount bankAccount = new BankAccount("5495HRX693SR");
-        BankAccount bankAccount1 = new BankAccount("1235AF777NV", 150345.99);
-        bankAccount1.deposit(1231.12);
-        System.out.println(bankAccount1.balance);
+        BankAccount bankAccount1 = new BankAccount("1235AF777NV", 200000.0);
+        // bankAccount1.deposit(1231.12);
+        // System.out.println(bankAccount1.balance);
+        bankAccount1.withdraw(0.00145556);
+
+        System.out.println(Math.round(bankAccount1.balance * 100.00)/100.00);
+
+        if (bankAccount1.balance < 0){
+            System.out.println("Некорректная операция. Счет не может иметь минусовой баланс");
+        }
+        else if (bankAccount1.balance==0){
+            System.out.println("На вашем балансе 0.00 руб.");
+        }
+        else System.out.println("На вашам балансе: " + bankAccount1.balance);
 
 
 
@@ -28,7 +39,13 @@ public class BankAccount {
 
 
     public void deposit(double amount){
+
         balance += amount;
+    }
+
+    public void withdraw(double number){
+
+        balance -= number;
     }
 
 }
